@@ -43,6 +43,11 @@ const Search = () => {
                 <Star><StarIcon /></Star>
                 Saved Places
             </SavedPlaces>
+
+            {/* Confirm Locations Button */}
+            <ButtonContainer>
+                <ConfirmLocation > Confirm Locations </ConfirmLocation>
+            </ButtonContainer>
             
         </SearchWrapper>
     )
@@ -99,4 +104,11 @@ const Star = tw.div`
 `
 const StarIcon = tw(BsFillStarFill)`
     text-3xl text-white
+`
+const ButtonContainer = tw.div`
+    flex items-center my-4 w-screen
+`
+
+const ConfirmLocation = tw.button`
+    bg-black text-white py-2 rounded-sm flex-1 mx-2 cursor:pointer
 `
