@@ -44,6 +44,11 @@ export default function Home() {
           </DashboardBtn>
         </DashboardButtons>
 
+        {/* This is our input Button */}
+        <InputButton>
+          Where to?
+        </InputButton>
+
 
       </Dashboard>
     </Container>
@@ -85,3 +90,6 @@ const Calendar = tw(BsFillCalendarPlusFill)`
   text-5xl text-gray-900 mb-1
 `
 
+const InputButton = tw.div`
+  h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8
+`
