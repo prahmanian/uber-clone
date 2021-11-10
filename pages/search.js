@@ -2,7 +2,7 @@ import React from 'react'
 import tw from "tailwind-styled-components"
 import {IoArrowBack} from 'react-icons/io5'
 import Link from 'next/link'
-import {BsCircle, BsFillSquareFill, BsPlusCircleFill} from 'react-icons/bs'
+import {BsCircle, BsFillSquareFill, BsPlusCircleFill, BsFillStarFill} from 'react-icons/bs'
 
 const Search = () => {
     return (
@@ -37,6 +37,12 @@ const Search = () => {
                 </IconContainer>
 
             </Container>
+
+            {/* Saved Places */}
+            <SavedPlaces>
+                <Star><StarIcon /></Star>
+                Saved Places
+            </SavedPlaces>
             
         </SearchWrapper>
     )
@@ -81,5 +87,16 @@ const End =tw(BsFillSquareFill)`
 `
 
 const Plus =tw(BsPlusCircleFill)`
-    flex-1 text-3xl
+    flex-1 text-4xl
+`
+
+const SavedPlaces = tw.div`
+    flex items-center bg-white px-4 py-2 mt-2
+`
+
+const Star = tw.div`
+    bg-gray-400 w-10 h-10 p-2 mr-2 rounded-full flex items-center justify-center
+`
+const StarIcon = tw(BsFillStarFill)`
+    text-3xl text-white
 `
