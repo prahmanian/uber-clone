@@ -110,5 +110,5 @@ const ButtonContainer = tw.div`
 `
 
 const ConfirmLocation = tw.button`
-    bg-black text-white py-2 rounded-sm flex-1 mx-2 cursor:pointer
+    bg-black text-white py-2 rounded-sm flex-1 mx-4 px-4  cursor-pointer text-2xl
 `
