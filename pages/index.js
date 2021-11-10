@@ -9,6 +9,7 @@ import {IoCarSportSharp} from 'react-icons/io5'
 import {MdElectricBike} from 'react-icons/md'
 import {BsFillCalendarPlusFill} from 'react-icons/bs'
 import User from './components/User'
+import Link from 'next/link'
 
 
 
@@ -30,10 +31,13 @@ export default function Home() {
 
         {/* This portion of the dashboard contains our three buttons. */}
         <DashboardButtons>
-          <DashboardBtn>
-            <Car />
-            <span>Ride</span>
-          </DashboardBtn>
+          <Link href="/search" passHref>
+            <DashboardBtn>
+              <Car />
+              <span>Ride</span>
+            </DashboardBtn>
+          </Link>
+
           <DashboardBtn>
             <Bike />
             <span>2-Wheels</span>
