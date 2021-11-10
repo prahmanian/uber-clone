@@ -3,6 +3,7 @@ import tw from "tailwind-styled-components"
 import {IoArrowBack} from 'react-icons/io5'
 import Link from 'next/link'
 import {BsCircle, BsFillSquareFill, BsPlusCircleFill, BsFillStarFill} from 'react-icons/bs'
+import ConfirmButton from './components/ConfirmButton'
 
 const Search = () => {
     return (
@@ -45,9 +46,7 @@ const Search = () => {
             </SavedPlaces>
 
             {/* Confirm Locations Button */}
-            <ButtonContainer>
-                <ConfirmLocation > Confirm Locations </ConfirmLocation>
-            </ButtonContainer>
+            <ConfirmButton text="Confirm Locations" />
             
         </SearchWrapper>
     )
@@ -104,11 +103,4 @@ const Star = tw.div`
 `
 const StarIcon = tw(BsFillStarFill)`
     text-3xl text-white
-`
-const ButtonContainer = tw.div`
-    flex items-center my-4 w-screen
-`
-
-const ConfirmLocation = tw.button`
-    bg-black text-white py-2 rounded-sm flex-1 mx-4 px-4  cursor-pointer text-2xl
 `
