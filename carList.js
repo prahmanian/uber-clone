@@ -25,3 +25,9 @@ export const carList = [
     multiplier: 2.8,
   }
 ]
+
+export let services = {}
+
+carList.map(car => {
+  services[car.service] = car
+})

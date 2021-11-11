@@ -17,5 +17,5 @@ const ButtonContainer = tw.div`
 `
 
 const Button = tw.button`
-    bg-black text-white py-2 rounded-sm flex-1 mx-4 px-4  cursor-pointer text-2xl
+    bg-black text-white py-2 rounded-sm flex-1 mx-4 px-4  cursor-pointer text-xl
 `

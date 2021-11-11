@@ -35,7 +35,11 @@ const Map = () => {
 }
 
 const MapWrapper = tw.div`
-    flex-1
+    h-1/2
+`
+
+const MapExport = tw(Map)`
+    flex-1 min-h-1/2
 `
 
 export default Map
